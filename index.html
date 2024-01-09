@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Star Wars</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="lateral-menu">
+        <img src="assets/logo.png" />
+        <div class="menu-itens">
+           <ul>
+            <li>
+                <img src="assets/dashboard.svg" >
+                <p>Dashboard</p>
+            </li>
+            <li>
+                <img src="assets/personagens.svg" >
+                <p>Persinagens</p>
+            </li>
+            <li>
+                <img src="assets/planetas.svg" >
+                <p>Planetas e Luas</p>
+            </li>
+            <li>
+                <img src="assets/nave.svg" >
+                <p>Naves Espaciais</p>
+            </li>
+           </ul> 
+        </div>
+        <div class="settings">
+        <i data-feather="settings"></i>
+        <p>Configurações</p>
+    </div>
+    </div>
+    <div class="content">
+        <div class="cards-header">
+        <div class="card card-small">
+            <div class="card-content">
+                <div class="card-info">
+                    <p>Personagens</p>
+                    <h2 id="personagens"></h2>
+                </div>
+                <img src="assets/personagens-black.svg">
+            </div>
+        </div>
+       
+        <div class="card card-larger">
+             <div class="card-container">
+            <div class="card-content">
+                <div class="card-info">
+                    <p>Luas</p>
+                    <h2 id="Luas"></h2>
+                </div>
+                <img src="assets/luas-black.svg">
+            </div>
+        
+        <div class="card-content">
+                <div class="card-info">
+                    <p>Planetas</p>
+                    <h2 id="Planetas"></h2>
+                </div>
+                <img src="assets/planetas-black.svg">
+            </div>
+        </div>
+         </div>
+
+        <div class="card card-small">
+            <div class="card-content">
+                <div class="card-info">
+                    <p>Naves</p>
+                    <h2 id="Naves"></h2>
+                </div>
+                <img src="assets/nave-black.svg">
+            </div>
+        </div>
+    </div>
+<div class="content-info">
+<div class="table">
+    <h5>Últimos Filmes</h5>
+    <p>Saiba dos ultimos lançamentos da marca</p>
+    <table id="filmsTable">
+        <thead>
+            <tr>
+                <th>Título</th>
+                <th>Estréia</th>
+                <th>Diretor</th>
+                <th>Episódio</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+</div>
+
+<div class="chart">
+    <div id="piechart_3d" style="width: 400px; height:400px;"> </div>
+</div>
+</div>
+    </div>
+</div>
+
+<script>
+    feather.replace();
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script> 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="index.js"> </script>
+</body>
+</html>
